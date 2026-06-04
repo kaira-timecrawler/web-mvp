@@ -1,0 +1,21 @@
+---
+const { title, date, era, location, excerpt, slug } = Astro.props;
+---
+
+<div class="story-card">
+  <h2 class="story-title">{title}</h2>
+  <div class="story-meta">
+    <span class="font-medium">{date}</span> • 
+    <span class="text-primary">{era}</span> • 
+    <span>{location}</span>
+  </div>
+  <p class="story-excerpt line-clamp-3">{excerpt}</p>
+  <div class="mt-4">
+    <a href={`/story/${slug}`} class="inline-flex items-center text-primary hover:text-secondary font-medium">
+      Leer más
+      <svg class="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="MM9 5l7 7-7 7"></path>
+      </svg>
+    </a>
+  </div>
+</div>

@@ -1,0 +1,20 @@
+---
+const { title = 'TimeCrawler' } = Astro.props;
+---
+
+<header class="bg-white shadow-sm border-b border-gray-200 sticky top-0 z-50">
+  <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-16">
+      <div class="flex items-center">
+        <h1 class="text-2xl font-bold text-purple-600">{title}</h1>
+      </div>
+      <nav class="flex items-center space-x-6">
+        <a href="/" class="text-gray-600 hover:text-purple-600 font-medium">Inicio</a>
+        <a href="/sobre-kaira" class="text-gray-600 hover:text-purple-600 font-medium">Sobre Kaira</a>
+        <div class="text-sm text-gray-600">
+          Capítulos: <span id="chapter-count" class="font-semibold text-purple-600">0</span>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
