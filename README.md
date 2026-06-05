@@ -2,78 +2,68 @@
 
 Un web serial automatizado que narra las aventuras de Kaira mientras viaja a través del tiempo, explorando diferentes épocas de la historia.
 
-## MVP Actual
+## 🚀 Despliegue Automático
 
-Este es el MVP inicial con:
+Este proyecto se despliega automáticamente en GitHub Pages usando GitHub Actions.
 
-- ✅ Web estática creada con Astro 5
-- ✅ Diseño responsive con Tailwind CSS
-- ✅ 10 capítulos de prueba en español
-- ✅ Página principal con lista de capítulos
-- ✅ Página individual de cada capítulo
-- ✅ Página "Sobre Kaira"
-- ✅ Navegación funcional
-- ✅ Diseño coherente y atractivo
+## 📋 Características
 
-## Estructura del Proyecto
+- **Astro 6.4.4**: Framework web moderno y rápido
+- **Tailwind CSS**: Estilos responsive y modernos
+- **Contenido en español**: 10 capítulos coherentes sobre Kaira
+- **Diseño responsive**: Optimizado para todos los dispositivos
+- **GitHub Pages**: Despliegue automático y gratuito
+
+## 📁 Estructura del Proyecto
 
 ```
 src/
-├── components/          # Componentes reutilizables
+├── components/         # Componentes reutilizables
 │   ├── Navigation.astro
 │   └── StoryCard.astro
-├── layouts/            # Layouts base
+├── layouts/          # Layouts base
 │   └── BaseLayout.astro
-├── pages/             # Páginas estáticas
+├── pages/            # Páginas principales
 │   ├── index.astro
-│   ├── sobre-kaira.astro
-│   └── story/[slug].astro
-├── stories/es/         # Contenido de los capítulos
-│   ├── chapter-01.md
-│   ├── chapter-02.md
-│   └── ... (10 capítulos)
-└── styles/            # Estilos globales
-    └── global.css
+│   └── sobre-kaira.astro
+├── stories/          # Contenido de los capítulos
+│   └── es/           # Capítulos en español
+└── styles/          # Estilos globales
+    ├── global.css
+    └── custom.css
 ```
 
-## Tecnologías
+## 🛠️ Tecnologías
 
-- **Astro 5**: Framework web moderno y rápido
+- **Astro**: Framework web estático
 - **Tailwind CSS**: Framework CSS utility-first
-- **Markdown**: Sistema de contenido simple
-- **GitHub Pages**: Plataforma de despliegue
+- **TypeScript**: Soporte de tipos
+- **PostCSS**: Procesamiento de CSS
+- **GitHub Actions**: Automatización de despliegue
 
-## Próximos Pasos
+## 🚀 Cómo Ver la Web
 
-1. Configurar despliegue en GitHub Pages
-2. Integrar con n8n para generación automática
-3. Implementar sistema de versionado de prompts
-4. Configurar sincronización automática con core
-5. Añadir diseño final y branding
+La web se despliega automáticamente en: `https://tu-usuario.github.io/timecrawler-web`
 
-## Cómo Empezar
+## 📝 Contenido
 
-```bash
-# Instalar dependencias
-npm install
+El proyecto incluye 10 capítulos sobre Kaira, la Cronocaminante:
 
-# Iniciar servidor de desarrollo
-npm run dev
+1. Capítulo 1: El Despertar del Tiempo (Antigua Roma)
+2. Capítulo 2: Eco del Renacimiento (Florencia)
+3. Capítulo 3: Sombras de la Revolución (París)
+4. Capítulo 4: Mecanismos del Futuro (Neo Tokio)
+5. Capítulo 5: Secretos del Antiguo Egipto (Valle de los Reyes)
+6. Capítulo 6: Voces de la Edad Media (Castillo de Carcassonne)
+7. Capítulo 7: Ecos de la Guerra Fría (Berlín)
+8. Capítulo 8: Alquimia del Renacimiento Científico (Pisa)
+9. Capítulo 9: Leyendas de la Antigua Grecia (Atenas)
+10. Capítulo 10: El Corazón del Tiempo (Época Actual)
 
-# Construir para producción
-npm run build
+## 🔧 Despliegue
 
-# Previsualizar producción
-npm run preview
-```
+El proyecto se despliega automáticamente cada vez que se hace push a la rama `main`.
 
-## Despliegue
+## 📄 Licencia
 
-```bash
-# Desplegar en GitHub Pages
-npm run deploy
-```
-
-## Contribución
-
-Este proyecto sigue la metodología SDD (Specs Driver Development) con enfoque en calidad y planificación detallada antes de la ejecución.
+MIT License - Ver archivo LICENSE para más detalles.
