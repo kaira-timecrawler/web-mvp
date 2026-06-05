@@ -1,0 +1,3 @@
+# Disable Jekyll GitHub Pages processing
+# This allows Astro to generate the site correctly
+.nojekyll
